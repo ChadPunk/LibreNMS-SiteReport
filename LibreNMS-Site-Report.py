@@ -85,7 +85,7 @@ time = datetime.datetime.now()
 timeModified = time.strftime("%Y-%m-%d %H:%M:%S")
 print(f"Created report! {timeModified}")
 # Generate PDF report using Jinja2
-# !!!!! needs to be an absoulute path to the file. Example /home/administrator/
+# !!!!! needs to be an absoulute path to the file. Example /home/administrator/. this needs to be where the report_template file lives.
 templateLoader = jinja2.FileSystemLoader(searchpath="PUT YOUR PATH HERE")
 templateEnv = jinja2.Environment(loader=templateLoader)
 TEMPLATE_FILE = "report_template.html"
