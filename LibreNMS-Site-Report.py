@@ -125,7 +125,7 @@ for filename in libregroups:
         p.add_header('Content-Disposition', 'attachment', filename=filename)
         msg.attach(p)
 # Create SMTP object and send the message
-s = smtplib.SMTP('smtp.roseburg.us', 25)
+s = smtplib.SMTP('smtp.yourdomain.com', 25)
 s.sendmail(from_addr, [to_addr] + cc_addr, msg.as_string())
 s.quit()
 
